@@ -15,12 +15,74 @@ a {
     margin-bottom: 1rem;
 }
 
-img {
+h1,
+h2,
+p {
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.center {
     display: block;
-    width: 200px;
     margin: auto;
 }
 
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 520px;
+    background: #333;
+}
+
+#container p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#container img:first-child {
+    width: 200px;
+}
+
+#logowanie h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+#logowanie form input {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 0.7rem;
+    margin: 0rem auto 1rem auto;
+}
+
+#logowanie input[type="submit"],
+button {
+    background: coral;
+    color: #fff;
+    width: 80%;
+    font-size: 1.4rem;
+    transition: background 0.1s ease-in-out;
+}
+
+#logowanie input[type="submit"]:hover,
+button:hover {
+    background: rgb(222, 114, 102);
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 3rem auto 1.5rem auto;
+}
+
+/* iksik od zamykania */
 #iks {
     flex: none;
     position: absolute;
@@ -52,42 +114,4 @@ img {
     width: 100%;
     height: 1px;
     transform: rotate(90deg);
-}
-
-#container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    min-height: 520px;
-    background: #333;
-}
-
-#logowanie h1 {
-    color: #f4f4f4;
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 1rem;
-}
-
-#logowanie form input {
-    display: block;
-    width: 80%;
-    border-radius: 5px;
-    border: none;
-    padding: 0.7rem;
-    margin: 0rem auto 1rem auto;
-}
-
-#logowanie input[type="submit"] {
-    background: coral;
-    color: #fff;
-    width: 80%;
-    font-size: 1.4rem;
-    transition: background 0.1s ease-in-out;
-}
-
-#logowanie input[type="submit"]:hover {
-    background: rgb(222, 114, 102);
-    cursor: pointer;
 }
