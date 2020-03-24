@@ -23,6 +23,12 @@ img.pies {
     right: 10px;
     width: 20px;
     height: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#iks:hover {
+    transform: rotate(180deg);
 }
 
 #iks div {
